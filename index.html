@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boyuan Liang</title>
+  <meta name="description" content="Boyuan Liang &mdash; personal academic website" />
+  <link rel="icon" href="data:," />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#about">Boyuan Liang</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="files/cv.pdf" target="_blank" rel="noopener">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ===================== About ===================== -->
+    <section id="about" class="section about-section">
+      <div class="about-grid">
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="images/profile.png" alt="Photo of Boyuan Liang" />
+        </div>
+
+        <div class="profile-info">
+          <h1 class="name">Boyuan Liang</h1>
+          <!-- TODO: add a title/affiliation line here, e.g. "PhD Student, XYZ University" -->
+          <p class="tagline">Robots as extensions of humans</p>
+
+          <p class="contact-line">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:liangb@berkeley.edu">liangb@berkeley.edu</a>
+          </p>
+
+          <div class="social-buttons">
+            <!-- TODO: replace href="#" with your real Google Scholar profile URL -->
+            <a class="btn" href="https://scholar.google.com/citations?user=DcP-_gYAAAAJ&hl=en" target="_blank" rel="noopener">
+              <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+            </a>
+            <!-- TODO: replace href="#" with your real LinkedIn profile URL -->
+            <a class="btn" href="https://www.linkedin.com/in/boyuan-liang-3b6b90192/?isSelfProfile=true" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+
+          <!-- TODO: replace this placeholder paragraph with your self introduction -->
+          <p class="bio">
+            I am a Ph.D. candidate in the Mechanical System Control Lab at the University of California, 
+            Berkeley, advised by Prof Masayoshi Tomizuka (Member of the National Academy of Engineering). Prior 
+            to that, I obtained B.Sc. in Applied Mathematics from National University of Singapore, where I worked
+            Prof Hui Ji and Prof Qianxiao Li. Before joining UC Berkeley, I also worked as a research engineer
+            in Agency of Science, Technology and Research, supervised by Dr. Yan Wu.
+          </p>
+          <p class="bio">
+            My research interest lies in seamless teleoperation. Specifically, I care how human motions can be reliably
+            forwarded to robots, and how robot sensings can be feedback to the human operator. My ultimate dream is
+            to build a Gundam-like teleoperation system, where the robot almost becomes a part of the operator's body and
+            extends his capability.
+          </p>
+          <p class="bio">
+            Outside research, I enjoy playing badminton and Arknights. Feel free to reach out for collaboration, or badminton, 
+            or Arknights events, or just chatting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Active Research ===================== -->
+    <section id="active_research" class="section research-section">
+      <h2 class="section-title">Active Projects</h2>
+      <div id="projects-container" class="projects-grid">
+        <!-- Populated from data/projects.json by js/main.js -->
+      </div>
+    </section>
+
+    <!-- ===================== Previous Research ===================== -->
+    <section id="previous_research" class="section research-section">
+      <h2 class="section-title">Previous Projects</h2>
+      <div id="previous-projects-container" class="projects-grid">
+        <!-- Populated from data/previous_projects.json by js/main.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Boyuan Liang</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
