@@ -1,5 +1,16 @@
 [
   {
+    "title": "Frequency-Modulated Piezoelectric Haptic Display",
+    "authors": "Boyuan Liang, Lingfeng Sun, Masayoshi Tomizuka",
+    "venue": "Preprint",
+    "year": 2026,
+    "image": "images/fm_haptic_display.jpg",
+    "first_author": true,
+    "paper": "https://arxiv.org/abs/2609.30626",
+    "website": "https://oscar-b-liang.github.io/hd_project_website/",
+    "abstract": "We present a frequency-modulated (FM) haptic display based on piezoelectric vibrating actuators. Existing haptic displays commonly encode haptic intensity through the deformation amplitude of individual haptic pixels. Although amplitude-modulated (AM) approaches have enabled compact haptic pixels, independently controlling the deformation amplitude of a large number of pixels can require increasingly complex and bulky driving systems, posing challenges for scaling toward high-density, large-area wearable displays. To address this scaling challenge, we investigate an FM design principle in which haptic intensity is encoded through vibration frequency. We further develop a \textit{Shared-Source Frequency Modulation} (SSFM) structure in which multiple haptic pixels are powered by a common power amplifier while their vibration spectrum are controlled individually, reducing the need for independent high-power amplification at each pixel. A proof-of-concept piezoelectric haptic display was built and evaluated on rendering spatial and temporal haptic patterns through volunteer tests. The results show that participants reliably distinguished spatial and temporal patterns encoded using FM principles within the investigated operating range. These findings demonstrate the feasibility of FM-based distributed haptic rendering and suggest a potential pathway toward more compact driving architectures for future high-density, large-area wearable haptic displays."
+  },
+  {
     "title": "Singularity-Avoidant Pose-Tracking Teleoperation",
     "authors": "Jianshu Zhou*, Boyuan Liang*, Junda Huang, Hanyu Zhang, Ian Zhang, Yixiao Wang, Pieter Abbeel, Masayoshi Tomizuka",
     "venue": "IEEE/ASME Transactions on Mechatronics (TMech), 2026",
@@ -12,9 +23,21 @@
     "abstract": "Mapping the operator's six degrees of freedom (DoF) hand pose to the robotic system's end-effector with inverse kinematics is a common approach in pose-tracking teleoperation. However, this approach suffers from nonintuitive orientation motion mapping caused by robot-side singularities, especially when the robotic arm follows the Pieper kinematics structure. In this work, to address the challenges of teleoperation near kinematic singularities across different setups, we propose two selectively applied singularity-avoidant motion mapping strategies. One approach locks one DoF on the robot arm to avoid wrist singularity, while the other approach appends additional joints but preserves all six DoFs of the robotic end-effector. In addition, we introduce the concept of an operational Jacobian to formally analyze the smoothness of robotic joint motions under pose-tracking teleoperation. The proposed solution generalizes across various setups, including a global–local interface on a lightweight arm, a collaborative arm, and an industrial arm, as well as VR-based bimanual teleoperation on a humanoid robot, demonstrating smooth and stable singularity-avoidant teleoperation."
   },
   {
+    "title": "Prismatic-Bending Transformable (PBT) Joint for a Modular, Foldable Manipulator With Enhanced Reachability and Dexterity",
+    "authors": "Jianshu Zhou, Junda Huang, Boyuan Liang, Xiang Zhang, Xin Ma, Masayoshi Tomizuka",
+    "venue": "IEEE/ASME Transactions on Mechatronics (TMech), 2025",
+    "year": 2025,
+    "image": "images/pbt.PNG",
+    "first_author": false,
+    "paper": "https://ieeexplore.ieee.org/abstract/document/11018080",
+    "poster": "",
+    "video": "",
+    "abstract": "Robotic manipulators, traditionally designed with classical joint-link articulated structures, excel in industrial applications but face challenges in human-centered and general-purpose tasks requiring greater dexterity and adaptability. To address these challenges, we propose the prismatic-bending transformable (PBT) joint—a novel, scissors-inspired mechanism with directional maintenance capability that provides bending, rotation, and elongation/contraction within a single module. This design enables transformable kinematic chains that are modular, reconfigurable, and scalable for diverse tasks. We detail the mechanical design, optimization, kinematic and dynamic modeling, and experimental validation of the PBT joint, demonstrating its integration into foldable, modular robotic manipulators. The PBT joint functions as a single stock keeping unit, enabling manipulators to be constructed entirely from standardized PBT joints. It also serves as a modular extension for existing systems, such as wrist modules, streamlining design, deployment, transportation, and maintenance. Three joint sizes have been developed and tested, showcasing enhanced dexterity, reachability, and adaptability, particularly in confined and cluttered spaces. This work presents a promising approach to robotic manipulator development, providing a compact and versatile solution for operation in dynamic and constrained environments."
+  },
+  {
     "title": "Adaptive Energy Regularization for Autonomous Gait Transition and Energy-Efficient Quadruped Locomotion",
     "authors": "Boyuan Liang*, Lingfeng Sun*, Xinghao Zhu*, Bike Zhang, Ziyin Xiong, Yixiao Wang, Chenran Li, Koushil Sreenath, Masayoshi Tomizuka",
-    "venue": "IEEE International Conference on Robotics and Automation (ICRA), 2025",
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
     "year": 2025,
     "image": "images/energy_reg.png",
     "first_author": true,
@@ -25,9 +48,22 @@
     "abstract": "In reinforcement learning for legged robot locomotion, crafting effective reward strategies is crucial. Predefined gait patterns and complex reward systems are widely used to stabilize policy training. Drawing from the natural locomotion behaviors of humans and animals, which adapt their gaits to minimize energy consumption, we investigate the impact of incorporating an energy-efficient reward term that prioritizes distance-averaged energy consumption into the reinforcement learning framework. Our findings demonstrate that this simple addition enables quadruped robots to autonomously select appropriate gaits-such as four-beat walking at lower speeds and trotting at higher speeds-without the need for explicit gait regularizations. Furthermore, we provide a guideline for tuning the weight of this energy-efficient reward, facilitating its application in real-world scenarios. The effectiveness of our approach is validated through simulations and on a real Unitree Gol robot. This research highlights the potential of energy-centric reward functions to simplify and enhance the learning of adaptive and efficient locomotion in quadruped robots. Videos and more details are at https://sites.google.com/berkeley.edu/efficient-locomotion"
   },
   {
+    "title": "Physics-Aware Robotic Palletization With Online Masking Inference",
+    "authors": "Tianqi Zhang, Zheng Wu, Yuxin Chen, Yixiao Wang, Boyuan Liang, Scott Moura, Masayoshi Tomizuka, Mingyu Ding, Wei Zhan",
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+    "year": 2025,
+    "image": "images/palletization.png",
+    "first_author": false,
+    "paper": "https://ieeexplore.ieee.org/document/11128204",
+    "website": "https://github.com/tianqi-zh/palletization",
+    "poster": "",
+    "video": "",
+    "abstract": "The efficient planning of stacking boxes, especially in the online setting where the sequence of item arrivals is unpredictable, remains a critical challenge in modern warehouse and logistics management. Existing solutions often address box size variations, but overlook their intrinsic and physical properties, such as density and rigidity, which are crucial for real-world applications. We use reinforcement learning (RL) to solve this problem by employing action space masking to direct the RL policy toward valid actions. Unlike previous methods that rely on heuristic stability assessments which are difficult to assess in physical scenarios, our framework utilizes online learning to dynamically train the action space mask, eliminating the need for manual heuristic design. Extensive experiments demonstrate that our proposed method outperforms existing state-of-the-arts. Furthermore, we deploy our learned task planner in a real-world robotic palletizer, validating its practical applicability in operational settings."
+  },
+  {
     "title": "Robust In-Hand Manipulation with Extrinsic Contacts",
     "authors": "Boyuan Liang, Kei Ota, Masayoshi Tomizuka, Devesh K. Jha",
-    "venue": "IEEE International Conference on Robotics and Automation (ICRA), 2024",
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
     "year": 2024,
     "image": "images/robust-inhand.png",
     "first_author": true,
@@ -39,7 +75,7 @@
   {
     "title": "Tactile-Guided Dynamic Object Planar Manipulation",
     "authors": "Boyuan Liang, Wenyu Liang, Yan Wu",
-    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022",
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
     "year": 2022,
     "image": "images/dynamic-hitting.png",
     "first_author": true,
@@ -51,7 +87,7 @@
   {
     "title": "Parameterized Particle Filtering for Tactile-Based Simultaneous Pose and Shape Estimation",
     "authors": "Boyuan Liang, Wenyu Liang, Yan Wu",
-    "venue": "IEEE Robotics and Automation Letters (RA-L), 2022",
+    "venue": "IEEE Robotics and Automation Letters (RA-L)",
     "year": 2022,
     "image": "images/se-method.jpg",
     "first_author": true,

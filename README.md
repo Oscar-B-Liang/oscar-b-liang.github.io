@@ -54,6 +54,7 @@ Static site (no build step). Style inspired by https://yifan-hou.github.io/.
 Entries are grouped by `year` (newest first) and keep their file order within a year. "Boyuan Liang" is automatically bolded in `authors`. `first_author: true` gives the entry a highlighted background. An empty `authors` field shows a greyed-out "Authors to be added" placeholder. The `paper`, `poster`, `video`, `website` and `abstract` links are only shown when filled in.
 
 - **CV**: replace `files/cv.pdf` with your real CV (keep the same filename).
+- **Last updated date**: in the footer of both `index.html` and `publications.html`, replace `Month DD, YYYY` with the date by hand.
 
 ## Previewing locally
 
