@@ -21,9 +21,13 @@
 
   <nav class="navbar">
     <div class="navbar-inner">
-      <a class="brand" href="#about">Boyuan Liang</a>
+      <div class="brand-block">
+        <a class="brand" href="#about">Boyuan Liang</a>
+        <p class="tagline">Finding the User-Centered Steering Wheel for Robots</p>
+      </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
         <li><a href="files/cv.pdf" target="_blank" rel="noopener">CV</a></li>
       </ul>
     </div>
@@ -35,12 +39,6 @@
       <div class="about-grid">
         <div class="profile-photo-wrap">
           <img class="profile-photo" src="images/profile.png" alt="Photo of Boyuan Liang" />
-        </div>
-
-        <div class="profile-info">
-          <h1 class="name">Boyuan Liang</h1>
-          <!-- TODO: add a title/affiliation line here, e.g. "PhD Student, XYZ University" -->
-          <p class="tagline">Robots as extensions of humans</p>
 
           <p class="contact-line">
             <i class="fa-solid fa-envelope"></i>
@@ -57,6 +55,10 @@
               <i class="fa-brands fa-linkedin"></i> LinkedIn
             </a>
           </div>
+        </div>
+
+        <div class="profile-info">
+          <!-- TODO: add a title/affiliation line here, e.g. "PhD Student, XYZ University" -->
 
           <!-- TODO: replace this placeholder paragraph with your self introduction -->
           <p class="bio">
@@ -82,17 +84,9 @@
 
     <!-- ===================== Active Research ===================== -->
     <section id="active_research" class="section research-section">
-      <h2 class="section-title">Active Projects</h2>
+      <h2 class="section-title">On-going Projects</h2>
       <div id="projects-container" class="projects-grid">
         <!-- Populated from data/projects.json by js/main.js -->
-      </div>
-    </section>
-
-    <!-- ===================== Previous Research ===================== -->
-    <section id="previous_research" class="section research-section">
-      <h2 class="section-title">Previous Projects</h2>
-      <div id="previous-projects-container" class="projects-grid">
-        <!-- Populated from data/previous_projects.json by js/main.js -->
       </div>
     </section>
   </main>

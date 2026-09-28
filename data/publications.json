@@ -1,0 +1,63 @@
+[
+  {
+    "title": "Singularity-Avoidant Pose-Tracking Teleoperation",
+    "authors": "Jianshu Zhou*, Boyuan Liang*, Junda Huang, Hanyu Zhang, Ian Zhang, Yixiao Wang, Pieter Abbeel, Masayoshi Tomizuka",
+    "venue": "IEEE/ASME Transactions on Mechatronics (TMech), 2026",
+    "year": 2026,
+    "image": "images/sf_teleoperation.jpg",
+    "first_author": true,
+    "paper": "https://ieeexplore.ieee.org/document/11517502/",
+    "poster": "",
+    "video": "",
+    "abstract": "Mapping the operator's six degrees of freedom (DoF) hand pose to the robotic system's end-effector with inverse kinematics is a common approach in pose-tracking teleoperation. However, this approach suffers from nonintuitive orientation motion mapping caused by robot-side singularities, especially when the robotic arm follows the Pieper kinematics structure. In this work, to address the challenges of teleoperation near kinematic singularities across different setups, we propose two selectively applied singularity-avoidant motion mapping strategies. One approach locks one DoF on the robot arm to avoid wrist singularity, while the other approach appends additional joints but preserves all six DoFs of the robotic end-effector. In addition, we introduce the concept of an operational Jacobian to formally analyze the smoothness of robotic joint motions under pose-tracking teleoperation. The proposed solution generalizes across various setups, including a global–local interface on a lightweight arm, a collaborative arm, and an industrial arm, as well as VR-based bimanual teleoperation on a humanoid robot, demonstrating smooth and stable singularity-avoidant teleoperation."
+  },
+  {
+    "title": "Adaptive Energy Regularization for Autonomous Gait Transition and Energy-Efficient Quadruped Locomotion",
+    "authors": "Boyuan Liang*, Lingfeng Sun*, Xinghao Zhu*, Bike Zhang, Ziyin Xiong, Yixiao Wang, Chenran Li, Koushil Sreenath, Masayoshi Tomizuka",
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA), 2025",
+    "year": 2025,
+    "image": "images/energy_reg.png",
+    "first_author": true,
+    "paper": "https://ieeexplore.ieee.org/document/11128812",
+    "website": "https://sites.google.com/berkeley.edu/efficient-locomotion?pli=1&authuser=0",
+    "poster": "",
+    "video": "",
+    "abstract": "In reinforcement learning for legged robot locomotion, crafting effective reward strategies is crucial. Predefined gait patterns and complex reward systems are widely used to stabilize policy training. Drawing from the natural locomotion behaviors of humans and animals, which adapt their gaits to minimize energy consumption, we investigate the impact of incorporating an energy-efficient reward term that prioritizes distance-averaged energy consumption into the reinforcement learning framework. Our findings demonstrate that this simple addition enables quadruped robots to autonomously select appropriate gaits-such as four-beat walking at lower speeds and trotting at higher speeds-without the need for explicit gait regularizations. Furthermore, we provide a guideline for tuning the weight of this energy-efficient reward, facilitating its application in real-world scenarios. The effectiveness of our approach is validated through simulations and on a real Unitree Gol robot. This research highlights the potential of energy-centric reward functions to simplify and enhance the learning of adaptive and efficient locomotion in quadruped robots. Videos and more details are at https://sites.google.com/berkeley.edu/efficient-locomotion"
+  },
+  {
+    "title": "Robust In-Hand Manipulation with Extrinsic Contacts",
+    "authors": "Boyuan Liang, Kei Ota, Masayoshi Tomizuka, Devesh K. Jha",
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA), 2024",
+    "year": 2024,
+    "image": "images/robust-inhand.png",
+    "first_author": true,
+    "paper": "https://ieeexplore.ieee.org/document/10611664",
+    "poster": "",
+    "video": "",
+    "abstract": "We present in-hand manipulation tasks where a robot moves an object in grasp, maintains its external contact mode with the environment, and adjusts its in-hand pose simultaneously. The proposed manipulation task leads to complex contact interactions which can be very susceptible to uncertainties in kinematic and physical parameters. Therefore, we propose a robust in-hand manipulation method, which consists of two parts. First, an in-gripper mechanics model that computes a naïve motion cone assuming all parameters are precise. Then, a robust planning method refines the motion cone to maintain desired contact mode regardless of parametric errors. Real-world experiments were conducted to illustrate the accuracy of the mechanics model and the effectiveness of the robust planning framework in the presence of kinematics parameter errors."
+  },
+  {
+    "title": "Tactile-Guided Dynamic Object Planar Manipulation",
+    "authors": "Boyuan Liang, Wenyu Liang, Yan Wu",
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022",
+    "year": 2022,
+    "image": "images/dynamic-hitting.png",
+    "first_author": true,
+    "paper": "https://ieeexplore.ieee.org/document/9981270",
+    "poster": "",
+    "video": "",
+    "abstract": "Planar pushing is a fundamental robot manipulation task with most algorithms built upon the quasi-static as-sumption. Under this assumption the end-effector should apply force on the pushed object along the full moving trajectory. This means that the target position must lie in the robot's workspace. To enable a robot to deliver objects outside of its workspace and facilitate faster delivery, the quasi-static assumption should be lifted in favour of dynamical manipulation. In this work, we propose a two-staged data-driven manipulation method to hit an unknown object to reach a target position. This expands the reachability of the manipulated object beyond the robot's workspace. The robot equipped with a tactile sensor first explores for the stable pushing region (SPR) on the given object by using a gain-scheduling PD control with the contact centre estimated to maintain full contact between the object and the end-effector. In the second stage, a learning-based approach is used to generate the impulse the object should receive at the SPR to reach a target sliding distance. The performance of proposed method is evaluated on a KUKA LBR iiwa 14 R820 robot manipulator and a XELA tactile sensor."
+  },
+  {
+    "title": "Parameterized Particle Filtering for Tactile-Based Simultaneous Pose and Shape Estimation",
+    "authors": "Boyuan Liang, Wenyu Liang, Yan Wu",
+    "venue": "IEEE Robotics and Automation Letters (RA-L), 2022",
+    "year": 2022,
+    "image": "images/se-method.jpg",
+    "first_author": true,
+    "paper": "https://ieeexplore.ieee.org/document/9667178",
+    "poster": "",
+    "video": "",
+    "abstract": "Object state and shape estimation is essential in many robotic manipulation tasks (e.g., in-hand manipulation, insertion). While such estimation is typically relied on visual perception, for tasks to be carried out in a vision-degraded or vision-denied environment, haptics becomes the reliable source of perception. In this letter, we propose the use of parameterized particle filtering to estimate object pose and shape in 3D space using tactile feedback. This approach is able to estimate with high accuracy using contact information of the object with a collision surface from a rough initial estimation. In comparison to conventional particle filtering, this approach significantly reduces the number of particles required for a satisfactory estimation, making it applicable for pose and shape estimation, where the number of degrees of freedom is high or even uncertain. Moreover, the proposed method can automatically choose the fastest-convergent contact action during the pose estimation stage to shorten the time required. A set of experiments in both simulation and on a real-world robot have been conducted to validate the proposed method and compare against the state-of-the-art approach in the literature. Results from both sets of experiments show that the proposed method can determine the pose and shape of the objects with very high accuracy within a small number of iterations."
+  }
+]

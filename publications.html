@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Boyuan Liang</title>
+  <meta name="description" content="Publications by Boyuan Liang" />
+  <link rel="icon" href="data:," />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html">Boyuan Liang</a>
+        <p class="tagline">Finding the User-Centered Steering Wheel for Robots</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a class="active" href="publications.html">Publications</a></li>
+        <li><a href="files/cv.pdf" target="_blank" rel="noopener">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="publications" class="section publications-section">
+      <h1 class="section-title">Publications</h1>
+      <p class="page-intro">
+        You can also find my papers on
+        <a href="https://scholar.google.com/citations?user=DcP-_gYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+        <br/>* indicates equal contribution. (Co-)first-authored papers are <mark class="pub-highlight-note">highlighted</mark>.
+      </p>
+      <div id="publications-container">
+        <!-- Populated from data/publications.json by js/main.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Boyuan Liang</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -4,11 +4,12 @@ Static site (no build step). Style inspired by https://yifan-hou.github.io/.
 
 ## Structure
 
-- `index.html` — home page (About + Active / Previous Research Projects sections)
+- `index.html` — home page (About + Active Projects sections)
+- `publications.html` — publications page, grouped by year
 - `css/style.css` — site styling
-- `js/main.js` — loads `data/projects.json` and `data/previous_projects.json` and renders the research project sections
+- `js/main.js` — loads `data/projects.json` and `data/publications.json` and renders them
 - `data/projects.json` — edit this to add your active research projects (see format below)
-- `data/previous_projects.json` — edit this to add your previous research projects (same format)
+- `data/publications.json` — edit this to add or fill in publications (see format below)
 - `files/cv.pdf` — your CV, linked from the "CV" nav link (currently a placeholder)
 - `images/profile.png` — your profile photo
 
@@ -31,6 +32,26 @@ Static site (no build step). Style inspired by https://yifan-hou.github.io/.
 ```
 
 `image` and `link` can be left as empty strings if you don't have one yet.
+
+- **Publications**: edit `data/publications.json`. Each entry looks like:
+
+```json
+{
+  "title": "Paper Title",
+  "authors": "Jane Doe*, Boyuan Liang*, and John Smith",
+  "venue": "IEEE International Conference on Robotics and Automation (ICRA), 2025",
+  "year": 2025,
+  "image": "images/your-image.jpg",
+  "first_author": true,
+  "paper": "https://link-to-paper",
+  "poster": "files/your-poster.pdf",
+  "video": "https://youtube.com/...",
+  "website": "https://optional-project-page",
+  "abstract": "Full abstract text."
+}
+```
+
+Entries are grouped by `year` (newest first) and keep their file order within a year. "Boyuan Liang" is automatically bolded in `authors`. `first_author: true` gives the entry a highlighted background. An empty `authors` field shows a greyed-out "Authors to be added" placeholder. The `paper`, `poster`, `video`, `website` and `abstract` links are only shown when filled in.
 
 - **CV**: replace `files/cv.pdf` with your real CV (keep the same filename).
 
